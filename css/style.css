@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+:root {
+
+/* Farver */
+--orange-color:#FE7D4E;
+--black-color: #333333;
+--brown-color: #543D32;
+--light-grey-color: #707070;
+    
+--primary-background: #FFF7F3;
+--light-grey-background: #FEFDF9; /* Book of the month */
+--light-grey-two-background: #FEF2F2;
+    
+/* Font */
+--primary-font: "Open Sans", sans-serif;
+/* Header */
+--header-height: 165px;
+
+    
+/* Shadow */
+--shadow: 10px 10px 30px 1px rgba(0, 0, 0, 0.3);
+    
+/* Margins */
+--side-margin: 9.3vw; 
+
+
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+
+}
+body  {
+    font-family: var(--primary-font);
+    background-color: var(--primary-background);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-background);
+}
+
+header.header-secondhand {
+    align-items: flex-end;
+    margin-bottom: 15px;
+    
+}
+
+
+nav {
+    background:var(--primary-background);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    height: var(--header-height);
+    font-weight: bold;
+    
+    
+}
+
+.secondhand section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 9.5vw;;
+    background-color: var(--primary-background);
+}
+
+.secondhand section img {
+    flex: 1 0 20%;
+    max-width: 20%;
+    box-shadow: var(--shadow);
+    background-color: blue;
+}
+
+.arrow{
+    text-decoration: none;
+    color: #333333;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+/* Main Hamburger menu */
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+    
+}
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 25px;
+    text-decoration: none;
+    color: var(--black-color);
+    
+}
+
+
+/* Til åbne hamburger menu */
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+    color: var(--black-color);
+}
+/* Hamburger som åben */
+nav .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    color: var(--black-color);
+}
+/* Når musen holdes over link, kommer der farve */
+nav .mainMenu li a:hover {
+    background: var(--orange-color);
+}
+
+h1 {
+    color: var(--black-color);
+}
+
+h1 span {
+    color: var(--orange-color);
+    letter-spacing: 1px; 
+}
+
+/* Faver til  Font-Awesome icons */
+.fa-facebook:hover {color: rgb(0, 110, 255);}
+.fa-twitter:hover {color: rgb(86, 154, 243);}
+.fa-instagram:hover {color: rgb(255, 0, 191);}
+
+nav .logo {
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+@media(max-width: 800px){
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--primary-background);
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+    nav .openMenu {
+        display: block;
+    }
+    nav .mainMenu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+        font-size: 1.6rem;
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+        color: black;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* * {
+    margin: 0 auto;
+    padding: 0;
+    font-family: var(--primary-font);
+}
+
+body {
+    background: var(--primary-background);
+} */
+
+/* header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8.25em;
+    margin: 0 var(--side-margin);
+}
+
+header.secondhand-header {
+    align-items: flex-end;
+    margin-bottom: 15px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==========================
+            NAV
+============================*/
+
+
+/* nav ul li {
+    font-family: var(--header-font);
+    display: inline;
+    list-style-type: none;
+    margin: 10px;
+    font-size: .8em;
+} */
+
+.nav-opretbruger{
+    color: var(--orange-color);
+    background-color: 	var(--orange-color);
+    border-radius: 25px;
+    border: .5px solid var(--black-color);
+    height: auto;
+    
+}
+
+
+
+/* Hero opsætning */
+.hero {
+    background-image: url("../img/hero\ image.jpg");
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* Text */
+    color: white;
+    text-align: center;
+    font-size: 1.4em;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+/* Hero paragraph opæstning */
+.hero p {
+    margin: 20px;
+    max-width: 65ch;
+}
+
+/* .hamburger {
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger:focus {
+    outline: none;
+} */
+
+/* @media screen and (max-width: 767px) {
+    nav {
+        display:block;
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+    }
+    .nav-opretbruger {
+        display: block;
+    }
+    
+    nav.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+} */
