@@ -16,28 +16,22 @@
 /* Header */
 --header-height: 165px;
 
-    
 /* Shadow */
 --shadow: 10px 10px 30px 1px rgba(0, 0, 0, 0.3);
-    
-
-
 }
-
-
-
 
 * {
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0;
-
 }
+
 body  {
     font-family: var(--primary-font);
     background-color: var(--primary-background);
 }
 
+/* header */
 header {
     display: flex;
     justify-content: space-between;
@@ -51,7 +45,7 @@ header.header-secondhand {
     
 }
 
-
+/* nav */
 nav {
     background:var(--primary-background);
     color: #fff;
@@ -61,8 +55,6 @@ nav {
     justify-content: space-between;
     height: var(--header-height);
     font-weight: bold;
-    
-    
 }
 
 footer {
@@ -76,17 +68,15 @@ footer {
     
   }
 
-
   footer .rightFooter img {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px;
     width: 100%;
-
- 
   }
 
+  /* secondhand */
 .secondhand section {
     display: flex;
     justify-content: space-between;
@@ -99,17 +89,15 @@ footer {
     flex: 1 0 20%;
     max-width: 20%;
     box-shadow: var(--shadow);
-    background-color: blue;
 }
 
+/* pil */
 .arrow{
     text-decoration: none;
     color: var(--black-color);
     display: flex;
     align-items: center;
 }
-
-
 
 /* Main Hamburger menu */
 nav .mainMenu {
@@ -146,6 +134,7 @@ nav .mainMenu li a:hover {
     background: var(--orange-color);
 }
 
+/* Headings */
 h1 {
     color: var(--black-color);
 }
@@ -164,8 +153,6 @@ h2 span  {
     letter-spacing: 1px; 
 }
 
-
-
 /* Faver til  Font-Awesome icons */
 .fa-facebook:hover {color: rgb(0, 110, 255);}
 .fa-facebook-square:hover {color: rgb(0, 110, 255);}
@@ -175,12 +162,89 @@ h2 span  {
 .fa-twitter {color: var(--orange-color);}
 .fa-instagram {color: var(--orange-color);}
 
+/* Logo */
 nav .logo {
     margin: 6px;
     font-size: 25px;
     cursor: pointer;
     margin: 0 auto;
 }
+
+section.monthly-book {
+    display: flex;
+    padding: 30px;
+}
+
+
+/* Opret bruger knap */
+.nav-opretbruger{
+    color: var(--orange-color);
+    background-color: 	#ffece5;
+    border-radius: 25px;
+    border: .5px solid var(--light-grey-color);
+    height: auto;
+}
+
+/* Hero opsætning */
+.hero {
+    /* background */
+    background-image: url("../img/hero\ image.jpg");
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* Flex */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* Text */
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* Månedens bog */
+.monthly-book-box {
+    background-color: #fff;
+    padding: 0 50px;
+    max-width: 370px;
+    font-size: 1.2rem;
+  }
+  
+/* Bogklubben */
+.bogklubben {
+    background-image: url("../img/Cover-Bogklub.jpg");
+    height: 60vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+
+/* Hero paragraph opæstning */
+.hero p {
+    margin: 20px;
+    max-width: 65ch;
+}
+
+/* Knap */
+.btn{
+    height: 1em;
+    background-color: var(--orange-color);
+    font-family: var(--header-font);
+    font-size: 0.5eem;
+    padding: 25px 30px;
+    border-radius: 25px;
+    color: white;
+    box-shadow: var(--shadow);
+}    
+
+/* Media queries */
 @media(max-width: 800px){
     nav .mainMenu {
         height: 100vh;
@@ -201,7 +265,6 @@ nav .logo {
         position: absolute;
         top: 20px;
         right: 20px;
-
     }
     nav .openMenu {
         display: block;
@@ -219,43 +282,4 @@ nav .logo {
     footer {
         width: auto;
     }
-}
-
-
-
-.nav-opretbruger{
-    color: var(--orange-color);
-    background-color: 	var(--orange-color);
-    border-radius: 25px;
-    border: .5px solid var(--black-color);
-    height: auto;
-    
-}
-
-
-
-/* Hero opsætning */
-.hero {
-    background-image: url("../img/hero\ image.jpg");
-    height: 90vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    /* Text */
-    color: white;
-    text-align: center;
-    font-size: 1.4em;
-    text-shadow: 2px 2px 4px #000000;
-
-}
-
-/* Hero paragraph opæstning */
-.hero p {
-    margin: 20px;
-    max-width: 65ch;
 }
