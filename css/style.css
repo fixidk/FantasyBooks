@@ -20,8 +20,6 @@
 /* Shadow */
 --shadow: 10px 10px 30px 1px rgba(0, 0, 0, 0.3);
     
-/* Margins */
---side-margin: 9.3vw; 
 
 
 }
@@ -67,6 +65,28 @@ nav {
     
 }
 
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 0.9rem;
+    margin: 0 auto;
+    
+  }
+
+  footer .rightFooter img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+
+ 
+  }
+
 .secondhand section {
     display: flex;
     justify-content: space-between;
@@ -84,15 +104,10 @@ nav {
 
 .arrow{
     text-decoration: none;
-    color: #333333;
-    font-weight: 600;
+    color: var(--black-color);
     display: flex;
     align-items: center;
 }
-
-
-
-
 
 
 
@@ -139,6 +154,17 @@ h1 span {
     color: var(--orange-color);
     letter-spacing: 1px; 
 }
+
+h2 {
+    color: var(--black-color);
+}
+
+h2 span  {
+    color: var(--orange-color);
+    letter-spacing: 1px; 
+}
+
+
 
 /* Faver til  Font-Awesome icons */
 .fa-facebook:hover {color: rgb(0, 110, 255);}
@@ -190,63 +216,6 @@ nav .logo {
 
 
 
-
-
-
-
-
-
-
-
-/* * {
-    margin: 0 auto;
-    padding: 0;
-    font-family: var(--primary-font);
-}
-
-body {
-    background: var(--primary-background);
-} */
-
-/* header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 8.25em;
-    margin: 0 var(--side-margin);
-}
-
-header.secondhand-header {
-    align-items: flex-end;
-    margin-bottom: 15px;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*==========================
-            NAV
-============================*/
-
-
-/* nav ul li {
-    font-family: var(--header-font);
-    display: inline;
-    list-style-type: none;
-    margin: 10px;
-    font-size: .8em;
-} */
-
 .nav-opretbruger{
     color: var(--orange-color);
     background-color: 	var(--orange-color);
@@ -283,36 +252,3 @@ header.secondhand-header {
     margin: 20px;
     max-width: 65ch;
 }
-
-/* .hamburger {
-    background-color: transparent;
-    border: 0;
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
-    display: none;
-}
-
-.hamburger:focus {
-    outline: none;
-} */
-
-/* @media screen and (max-width: 767px) {
-    nav {
-        display:block;
-        flex-wrap: wrap;
-        flex-direction: column;
-        
-    }
-    .nav-opretbruger {
-        display: block;
-    }
-    
-    nav.show {
-        display: flex;
-    }
-
-    .hamburger {
-        display: block;
-    }
-} */
